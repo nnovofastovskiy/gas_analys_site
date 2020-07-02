@@ -82,7 +82,10 @@ body {
     line-height: 20px;
     position: relative;
 }
-.header-nav__item:first-child::after {
+.header-nav__item_active {
+    color: #436EA4;
+}
+.header-nav__item_active::after {
     content: '';
     position: absolute;
     left: 0;
@@ -97,6 +100,31 @@ body {
 }
 .header-nav__item:hover {
     color: #436EA4;
+}
+
+.main-search {
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.main-search__input {
+    height: 46px;
+    width: 100%;
+    border: none;
+}
+
+.main-search__btn {
+    width: 80px;
+    height: 42px;
+    background-color: #5B92D3;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 main {
